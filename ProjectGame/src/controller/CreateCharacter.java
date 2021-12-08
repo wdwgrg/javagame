@@ -9,10 +9,10 @@ public class CreateCharacter {
             System.out.println("1:전사, 2:마법사, 3:궁수");
             String characterNum = sc.nextLine();
 
-        if (characterNum == "1") {
+        if (characterNum.equals("1")) {
             System.out.println("전사를 선택하였습니다");
 
-        } else if (characterNum == "2") {
+        } else if (characterNum.equals("2")) {
             System.out.println("마법사를 선택했습니다");
 
         } else {

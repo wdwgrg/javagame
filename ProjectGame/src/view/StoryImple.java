@@ -5,7 +5,7 @@ import controller.Battle;
 public class StoryImple implements Story{
     @Override
     public void battle() {
-        Battle.battle();
+//        Battle.battle();
     }
 
     @Override

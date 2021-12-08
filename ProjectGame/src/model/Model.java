@@ -23,8 +23,7 @@ public class Model {
         this.attackPt = attackPt;
     }
 
-    public void attack(Mod mob){
-
+    public void attack(Mob mob){
         mob.setHp(mob.getHp() - attackPt);
     }
 

@@ -14,7 +14,15 @@ public class Mob {
     }
 
     public void attack(Model model) {
-        model.setHp(model.getHp() - attackPt);
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getHp() {

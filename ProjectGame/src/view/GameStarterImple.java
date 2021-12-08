@@ -7,6 +7,7 @@ public class GameStarterImple implements GameStarter{
     Scanner sc = new Scanner(System.in);
     @Override
     public void gameStarter() {
+        Starter st = new Starter();
         Starter.starter();
     }
 
@@ -17,9 +18,6 @@ public class GameStarterImple implements GameStarter{
 
     @Override
     public void createCharacter() {
-        System.out.println("캐릭터를 선택하시오");
-        System.out.println("1:전사, 2:마법사, 3:궁수");
-        
         CreateCharacter.createCharacter();
     }
 }
