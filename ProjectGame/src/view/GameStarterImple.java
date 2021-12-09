@@ -1,7 +1,6 @@
 package view;
 import java.util.Scanner;
 import controller.CreateCharacter;
-import controller.GameOver;
 import controller.Starter;
 
 public class GameStarterImple implements GameStarter{

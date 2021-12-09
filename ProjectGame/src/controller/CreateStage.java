@@ -9,14 +9,13 @@ public class CreateStage {
     public static void createStage(Model Model, int n) {
         
 
-        String[] names = {"늑대", "해골", "뱀파이어", "드래곤"};
+        String[] names = {"r", "a", "b", "c"};
         int hp = 500;
         int attackPt = 30;
         int exp = 200;
 
         System.out.println("*************Stage" + n + "******************");
         Mob[] mobs = new Mob[n];
-
         for (int i = 0; i < n; i++) {
             if(Model.getHp() <= 0) {
                 break;
@@ -26,19 +25,16 @@ public class CreateStage {
             }
             else mobs[i] = CreateMob.createMob(names[i], hp + (hp * i * 2), attackPt + (attackPt * i * 2), exp + (exp * i));
         }
-//
-//        for (int i = 0; i < n; i++) {
-//
-//            if(Model.getHp() <= 0) {
-//                break;
-//            }
-//
-//            Battle.battle(Model, mobs[i]);
-//        }
-        Battle.battle(Model, mobs);
+        for (int i = 0; i < n; i++) {
+
+            if(Model.getHp() <= 0) {
+                break;
+            }
+
+            Battle.battle(Model, mobs[i]);
+        }
 
         System.out.println("1. 다음 스테이지      2. 마을로");
-
         Scanner sc = new Scanner(System.in);
         sc.next();
     }

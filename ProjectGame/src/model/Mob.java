@@ -5,12 +5,17 @@ public class Mob {
     private int hp;
     private int exp;
     private int attackPt;
+    private int gold;
 
     public Mob(String name, int hp, int exp, int attackPt) {
         this.name = name;
         this.hp = hp;
         this.exp = exp;
         this.attackPt = attackPt;
+    }
+
+    public int getGold() {
+        return gold;
     }
 
     public void attack(Model model) {
