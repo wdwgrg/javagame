@@ -1,7 +1,6 @@
 package view;
 
 import controller.Battle;
-import controller.GameOver;
 
 public class StoryImple implements Story{
     @Override
@@ -16,6 +15,6 @@ public class StoryImple implements Story{
 
     @Override
     public void endGame() {
-        GameOver.gameOver();
+
     }
 }

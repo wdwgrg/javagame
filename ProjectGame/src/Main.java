@@ -12,12 +12,10 @@ public class Main {
     public static void main(String[] args) {
         Barbarian ba = new Barbarian(200);
         System.out.println("******************마을**************");
-        CreateStage.createStage(ba,1);
-        CreateStage.createStage(ba,2);
-        CreateStage.createStage(ba,3);
-        CreateStage.createStage(ba,4);
 
-
-
+        CreateStage.createStage(ba, 1);
+        CreateStage.createStage(ba, 2);
+        CreateStage.createStage(ba, 3);
+        CreateStage.createStage(ba, 4);
     }
 }
