@@ -16,7 +16,7 @@ public class Barbarian extends Model{
 
     public void attack(Mob mob){
         mob.setHp(mob.getHp() - power);
-        System.out.println(mob.getName()+ "을 " + this.power +"만큼 주먹으로 공격하였습니다.");
+        System.out.println(mob.getName()+ "을 " + this.power +"만큼 검으로 공격하였습니다.");
     }
 
     @Override
