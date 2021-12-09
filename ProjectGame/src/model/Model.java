@@ -12,6 +12,14 @@ public class Model {
     private int attackPt;
 
     public Model() {
+        maxHp = 200;
+        hp = 200;
+        maxMp = 100;
+        mp = 100;
+        lv = 1;
+        exp = 0;
+        needExp = 100;
+        attackPt = 50;
     }
 
     public Model(String name, int hp, int exp, int mp, int lv, int attackPt) {
@@ -62,6 +70,12 @@ public class Model {
     }
 
     public void levelUp() {
+        maxHp = maxHp * 2;
+        maxMp = maxMp * 2;
+        hp = maxHp;
+        mp = maxMp;
+        lv++;
+        needExp *= 2;
 
     }
 

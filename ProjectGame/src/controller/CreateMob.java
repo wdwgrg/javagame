@@ -3,8 +3,10 @@ package controller;
 import model.Mob;
 
 public class CreateMob {
-    public static void createMob(String name, int hp, int attackPt, int exp) {
+    public static Mob createMob(String name, int hp, int attackPt, int exp) {
 //        Mob[] mobs = {new Mob(), new Mob(), new Mob()}
+        Mob m =  new Mob(name, hp,exp,attackPt);
+        return m;
     }
     public static void createBossMob(String name, int hp, int attackPt, int exp) {
 //        Mob mob = new Mob();

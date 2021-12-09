@@ -14,7 +14,8 @@ public class Mob {
     }
 
     public void attack(Model model) {
-
+        model.setHp(model.getHp() - attackPt);
+        System.out.println(name + "에게" + attackPt + "만큼 공격받았습니다.");
     }
 
     public String getName() {

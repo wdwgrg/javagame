@@ -7,7 +7,6 @@ public class GameStarterImple implements GameStarter{
     Scanner sc = new Scanner(System.in);
     @Override
     public void gameStarter() {
-        Starter st = new Starter();
         Starter.starter();
     }
 
