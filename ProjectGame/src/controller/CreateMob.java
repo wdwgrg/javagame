@@ -11,9 +11,4 @@ public class CreateMob {
     public static void createBossMob(String name, int hp, int attackPt, int exp) {
 //        Mob mob = new Mob();
     }
-
-//    public static Mob createMob(int gold){
-////        Mob m1 = new Mob(gold);
-////        return m1;
-////    }
 }
